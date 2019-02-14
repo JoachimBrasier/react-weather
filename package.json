@@ -1,0 +1,28 @@
+{
+  "name": "react-weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "express",
+    "openweathermap"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IcezLP/React-weather.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IcezLP/React-weather/issues"
+  },
+  "homepage": "https://github.com/IcezLP/React-weather#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
