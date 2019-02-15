@@ -9,14 +9,14 @@ class Footer extends Component {
                 <div className={'content has-text-centered'}>
                     <div>
                         <strong>
-                            <a href={'https://jbrasier.fr/'} target={'_blank'}>
+                            <a href={'https://jbrasier.fr/'} target={'_blank'} rel={'noopener'}>
                                 Créer par Joachim Brasier
                             </a>
                         </strong>
                     </div>
                     <hr />
                     <div>
-                        <a href={'https://bulma.io/'} target={'_blank'}>
+                        <a href={'https://bulma.io/'} target={'_blank'} rel={'noopener'}>
                             <img src={Bulma} alt={'Construit avec Bulma'} width={'180px'} />
                         </a>
                     </div>

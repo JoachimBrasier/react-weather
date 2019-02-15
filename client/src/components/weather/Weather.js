@@ -105,6 +105,7 @@ class Weather extends Component {
                                     <form noValidate onSubmit={this.onSubmit}>
                                         <div className={'field has-addons has-addons-right'}>
                                             <div className={'control is-expanded'}>
+                                                <label htmlFor={'city'} style={{'display': 'none'}}>Ville</label>
                                                 <input
                                                     className={'input custom-input'}
                                                     type={'text'}
