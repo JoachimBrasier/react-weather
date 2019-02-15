@@ -3,6 +3,8 @@ const path = require('path');
 
 const app = express();
 
+app.use(express.static('public'));
+
 if (process.env.NODE_ENV === 'production'){
     app.use(express.static('client/build'));
     app.get('*', (req, res) => {

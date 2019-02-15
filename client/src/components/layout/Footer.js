@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
 
-class Footer extends Component {
+import Bulma from '../icon/made-with-bulma.png';
+
+class Footer extends Component { 
     render() {
         return (
             <footer className={'footer'}>
                 <div className={'content has-text-centered'}>
-                    <p>
-                        <strong>React météo</strong>
-                    </p>
+                    <div>
+                        <strong>
+                            <a href={'https://jbrasier.fr/'} target={'_blank'}>
+                                Créer par Joachim Brasier
+                            </a>
+                        </strong>
+                    </div>
+                    <hr />
+                    <div>
+                        <a href={'https://bulma.io/'} target={'_blank'}>
+                            <img src={Bulma} alt={'Construit avec Bulma'} width={'180px'} />
+                        </a>
+                    </div>
                 </div>
             </footer>
         )

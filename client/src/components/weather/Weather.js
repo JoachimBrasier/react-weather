@@ -5,7 +5,9 @@ import { connect } from 'react-redux';
 import { getDataByGeolocation, getDataBySearch } from '../../actions/weatherActions';
 
 import Loader from '../icon/Loader';
-import background from '../icon/background.jpg';
+import Footer from '../layout/Footer';
+import backgroundNight from '../icon/background.jpg';
+import backgroundDay from '../icon/background2.jpg';
 
 class Weather extends Component {
 
@@ -70,14 +72,16 @@ class Weather extends Component {
             </div>;
         };
 
+        const date = new Date();
+        const hour = date.getHours();
+
         // TODO
         // Show date, hour, render background by hour day/night
 
         return (
             <div id={'weather'}>
-                <div className={'header'} style={{'background': `url(${background}) no-repeat center`}}>
+                <div className={'header'} style={{'background': `url(${hour >= 6 || hour <= 19 ? backgroundDay : backgroundNight}) no-repeat center`}}>
                     <div className={'main-data'}>
-                    {weather.weather && console.log(weather.weather.id)}
                         {weather.weather && weather.weather[0].id >= '600' && weather.weather[0].id <= '622' ? (
                             <div className={'winter-is-coming'}>
                                 <div className={'snow snow--near'}></div>
@@ -138,6 +142,7 @@ class Weather extends Component {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         );
     };

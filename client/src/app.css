@@ -7,6 +7,10 @@ body{
     overflow: hidden;
 }
 
+.footer svg{
+    max-width: 100px;
+}
+
 #loader{
     position: fixed;
     background: rgba(0,0,0,0.5);
@@ -35,6 +39,10 @@ body{
     #weather .header .main-data{
         padding: 5rem 0;
     }
+}
+
+input::placeholder{
+    color: #3d3d3d !important;
 }
 
 .custom-input{
