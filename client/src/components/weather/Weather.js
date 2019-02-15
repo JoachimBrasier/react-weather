@@ -109,6 +109,7 @@ class Weather extends Component {
                                                 <input
                                                     className={'input custom-input'}
                                                     type={'text'}
+                                                    id={'city'}
                                                     name={'city'}
                                                     placeholder={'Ville a rechercher'}
                                                     onChange={this.onChange}
@@ -118,7 +119,7 @@ class Weather extends Component {
                                             <div className={'control'}>
                                                 <span className={'select'}>
                                                     <label htmlFor={'units'} hidden>Units</label>
-                                                    <select name={'units'} className={'custom-input'} onChange={this.onChange}>
+                                                    <select id={'units'} name={'units'} className={'custom-input'} onChange={this.onChange}>
                                                         <option value={'metric'}>°C</option>
                                                         <option value={'imperial'}>°F</option>
                                                     </select>
