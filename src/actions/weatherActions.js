@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { LOADING, LOADED, GET_WEATHER, GET_ERRORS, GET_FORECAST } from './types';
 
-const apiKey = process.env.apiKey;
+const apiKey = '0ea94cebcaebcce638e48d558f192b4d';
 
 // Get weather & forecast by geolocation
 export const getDataByGeolocation = (lat, lon, units) => dispatch => {
