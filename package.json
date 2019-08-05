@@ -1,28 +1,39 @@
 {
-  "name": "react-weather",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "keywords": [
-    "react",
-    "redux",
-    "express",
-    "openweathermap"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/IcezLP/React-weather.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/IcezLP/React-weather/issues"
-  },
-  "homepage": "https://github.com/IcezLP/React-weather#readme",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "express": "^4.16.4"
+    "axios": "^0.18.0",
+    "bulma": "^0.7.4",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.1",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-helmet": "^5.2.0",
+    "react-moment": "^0.8.4",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.4",
+    "recharts": "^1.4.3",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "react-localize-redux": "^3.5.2"
   }
 }
